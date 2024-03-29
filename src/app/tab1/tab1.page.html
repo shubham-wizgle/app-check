@@ -9,7 +9,32 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Tab 12</ion-title>
+      <div  style="color: red;" >
+        <table *ngIf="canAccess" >
+          <tr>
+            <td>GPay</td>
+            <td>{{canAccess?.GPay}}</td>
+          </tr>
+          <tr>
+            <td>PhonePe</td>
+            <td>{{canAccess?.PhonePe}}</td>
+          </tr>
+          <tr>
+            <td>Paytm</td>
+            <td>{{canAccess?.Paytm}}</td>
+          </tr>
+          <tr>
+            <td>PayZapp</td>
+            <td>{{canAccess?.PayZapp}}</td>
+          </tr>
+          <tr>
+            <td>BHIM</td>
+            <td>{{canAccess?.BHIM}}</td>
+          </tr>
+        </table>
+      </div>
+     
     </ion-toolbar>
   </ion-header>
 
